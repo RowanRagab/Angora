@@ -1,0 +1,171 @@
+/* GENERAL */
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* FIXED */
+.fixed-setting{
+    width: 3%;
+    top: 20%;
+}
+/* ANIMITION */
+main .animi{
+    width: 50px;
+    height: 80px;
+    
+}
+main .animi .dot{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0%;
+    animation: dot 1s infinite;
+    animation-direction: alternate;
+}
+@keyframes dot {
+    0%{ top:0%;
+        opacity: 0;
+    }
+    100%{top: 90%;
+        opacity: 1;
+    }
+}
+/* slider arrow */
+.home .fa-chevron-left, .home .fa-chevron-right{
+    color: #fff;
+    transition: all .5s;
+}
+.home .fa-chevron-left:hover, .home .fa-chevron-right:hover{
+    color:rgb(234,108,105) ;
+    background-color: #fff;
+
+}
+/* GROUPING */
+.about-head span ,.team-head span, .serv-head span, .touch-head span{
+    font-size: 90px;
+}
+.services .serv-icon,.touch .touch-icons{
+    color: rgb(234,108,105);
+}
+.line{
+    width: 4%;
+    height: 1px;
+    background-color: rgb(7,7,7);
+    transition: all .5s;
+}
+.serv-head:hover .line ,.team-head:hover .line, .touch-head:hover .line,.about-head:hover .line{
+    transform: scale(1.7,1.7);
+}
+/* NAV BAR */
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link ,.icons a{
+    color: #fff;
+}
+.navbar-nav .nav-link.active:hover, .navbar-nav .nav-link:hover ,.icons a:hover{
+    color: rgb(234,108,105);
+}
+
+/* HOME (MAIN) */
+main{
+    background-image: url(images/slideshow-2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.home h1{
+    font-size: 72px;
+}
+
+/* ABOUT US */
+.progress-padding{
+    padding-left: 70%;
+}
+.progress{
+    height: 5px;
+}
+.progress-bar{
+    background-color:rgb(234,108,105);
+}
+/* OUR TEAM */
+.team-img img,.team-layout{
+    transition: opacity .5s ,transform .5s; 
+    
+}
+.team-info:hover h3{
+color: rgb(234,108,105) ;
+}
+.team-layout{
+    opacity: 0;
+    background-color:rgb(234,108,105) ;
+}
+.team-img:hover img{
+    transform: scale(1.2,1.2);
+}
+.team-layout:hover{
+    opacity: .8;
+}
+.team .contact-us, .send-m{
+    background: rgb(242,84,84);
+}
+.team .contact-us:hover,.send-m:hover{
+    background: rgb(251, 121, 121);
+}
+/* SERVICES   */  
+
+.serv-content h4{
+    transition: color .5s;
+}
+.serv-content:hover  h4 , .phones:hover h6{
+color:rgb(234,108,105) ;
+}
+/* CLIIENT SECTION */
+.client-img img{
+    width: 10%;
+    height: 10%;
+}
+.client button img{
+    width: 65%;
+    height: 60%;
+}
+/* GET IN TOUCH */
+.phones h6{
+    transition:color .5s ;
+}
+.touch input:focus, .touch textarea:focus{
+    border:2px solid rgb(234,108,105) ;
+}
+
+/* FOOTER SECTION */
+.back-arrow i{
+    width: 3%;
+    height: 12%;
+    background-color:rgb(234,108,105) ;
+    opacity: .4;
+    transition: all .5s;
+}
+.back-arrow:hover i{
+    opacity: 1;
+}
+footer .footer-links .container{
+    background-image: url(images/dotted-map.png);
+    background-size: contain;
+    background-position: center;
+}
+footer a{
+    color: rgb(110, 110, 110);
+}
+footer ul li:hover ,footer a:hover{
+color:  rgb(234,108,105);
+}
+.footer-contact{
+    background: rgb(26,26,26);
+}
+.footer-contact a{
+    color:#fff
+}
+footer ul li:hover ,footer a{
+    transition: all .5s;
+}
+.adress{
+   color:rgb(99,99,99);
+}
